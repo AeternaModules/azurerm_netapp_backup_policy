@@ -1,5 +1,5 @@
-resource "azurerm_netapp_backup_policy" "netapp_backup_policys" {
-  for_each = var.netapp_backup_policys
+resource "azurerm_netapp_backup_policy" "netapp_backup_policies" {
+  for_each = var.netapp_backup_policies
 
   account_name            = each.value.account_name
   location                = each.value.location
