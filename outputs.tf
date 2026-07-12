@@ -1,3 +1,7 @@
+output "netapp_backup_policies_id" {
+  description = "Map of id values across all netapp_backup_policies, keyed the same as var.netapp_backup_policies"
+  value       = { for k, v in azurerm_netapp_backup_policy.netapp_backup_policies : k => v.id }
+}
 output "netapp_backup_policies_account_name" {
   description = "Map of account_name values across all netapp_backup_policies, keyed the same as var.netapp_backup_policies"
   value       = { for k, v in azurerm_netapp_backup_policy.netapp_backup_policies : k => v.account_name }
