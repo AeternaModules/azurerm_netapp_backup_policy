@@ -19,11 +19,11 @@ EOT
     location                = string
     name                    = string
     resource_group_name     = string
-    daily_backups_to_keep   = optional(number) # Default: 2
-    enabled                 = optional(bool)   # Default: true
-    monthly_backups_to_keep = optional(number) # Default: 1
+    daily_backups_to_keep   = optional(number)
+    enabled                 = optional(bool)
+    monthly_backups_to_keep = optional(number)
     tags                    = optional(map(string))
-    weekly_backups_to_keep  = optional(number) # Default: 1
+    weekly_backups_to_keep  = optional(number)
   }))
 }
 
